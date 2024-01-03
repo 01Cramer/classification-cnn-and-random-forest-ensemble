@@ -73,4 +73,4 @@ def detect(img_path: str) -> Dict[str, int]:
 
     return {'aspen': aspen, 'birch': birch, 'hazel': hazel, 'maple': maple, 'oak': oak}
 
-print(detect("C:\\Users\\adria\\Documents\\GitHub\\leaf-count-cv\\test_data\\0005.jpg"))
+print(detect("C:\\Users\\adria\\Documents\\GitHub\\leaf-count-cv\\test_data\\0029.jpg"))

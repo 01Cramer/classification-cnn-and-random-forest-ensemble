@@ -1,9 +1,9 @@
 import os
 import cv2
 
-img_path = "C:\\Users\\adria\\Documents\\GitHub\\leaf-count-cv\\data\\0005.jpg"
+img_path = "C:\\Users\\adria\\Documents\\GitHub\\leaf-count-cv\\data\\0028.jpg"
 output_dir = "C:\\Users\\adria\\Documents\\GitHub\\leaf-count-cv\\leafs"
-leaf_number = 50
+leaf_number = 280
 
 def cutleaf(img_path, output_dir, leaf_number):
     img = cv2.imread(img_path, cv2.IMREAD_COLOR)
