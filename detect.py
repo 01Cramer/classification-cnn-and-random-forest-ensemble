@@ -13,7 +13,7 @@ def prepare(leaf_path):
 
 
 def detect(img_path: str) -> Dict[str, int]:
-    output_dir = "C:\\Users\\adria\\Documents\\GitHub\\leaf-count-cv\\leafs"
+    output_dir = "leafs"
     file_list = os.listdir(output_dir)
     for file_name in file_list:
         file_path = os.path.join(output_dir, file_name)
@@ -58,6 +58,7 @@ def detect(img_path: str) -> Dict[str, int]:
         leaf_transformed = prepare(leaf_path)
 
         predictions = model.predict(leaf_transformed)
+        print(predictions)
         classification = np.argmax(predictions)
 
         if classification == 0:
@@ -73,4 +74,4 @@ def detect(img_path: str) -> Dict[str, int]:
 
     return {'aspen': aspen, 'birch': birch, 'hazel': hazel, 'maple': maple, 'oak': oak}
 
-print(detect("C:\\Users\\adria\\Documents\\GitHub\\leaf-count-cv\\test_data\\0029.jpg"))
+print(detect("test_data\\0029.jpg"))
