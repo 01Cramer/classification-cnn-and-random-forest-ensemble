@@ -74,4 +74,4 @@ def detect(img_path: str) -> Dict[str, int]:
 
     return {'aspen': aspen, 'birch': birch, 'hazel': hazel, 'maple': maple, 'oak': oak}
 
-print(detect("test_data\\0029.jpg"))
+print(detect("test_data\\lisc.jpg"))

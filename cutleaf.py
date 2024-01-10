@@ -1,13 +1,18 @@
 import os
 import cv2
+import matplotlib.pyplot as plt
 
-img_path = "C:\\Users\\adria\\Documents\\GitHub\\leaf-count-cv\\data\\0028.jpg"
-output_dir = "C:\\Users\\adria\\Documents\\GitHub\\leaf-count-cv\\leafs"
+img_path = "test_data\\0029.jpg"
+output_dir = "leafs"
 leaf_number = 280
 
 def cutleaf(img_path, output_dir, leaf_number):
     img = cv2.imread(img_path, cv2.IMREAD_COLOR)
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+    # figHist, axsHist = plt.subplots(1, 1)
+    # axsHist.hist(img_gray.ravel(), bins =256, range=[0,255]);
+    # plt.show()
 
     ret, binary = cv2.threshold(img_gray, 230, 255, cv2.THRESH_BINARY)
     contours, hierarchy = cv2.findContours(binary, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
