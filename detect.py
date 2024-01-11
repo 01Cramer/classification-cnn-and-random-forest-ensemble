@@ -1,28 +1,25 @@
-from typing import Dict
 import tensorflow as tf
 import cv2
 import os
 import numpy as np
+import json
+from pathlib import Path
+from typing import Dict
+import click
+from tqdm import tqdm
+
 def prepare(leaf_path):
-    leaf_size = 50
-    leaf_img = cv2.imread(leaf_path, cv2.IMREAD_GRAYSCALE)
+    leaf_size = 150
+    leaf_img = cv2.imread(leaf_path, cv2.IMREAD_COLOR)
     leaf_img = cv2.resize(leaf_img, (leaf_size, leaf_size))
     leaf_img = leaf_img/255.0
-    leaf_img = np.array(leaf_img).reshape(-1, leaf_size, leaf_size, 1)
+    leaf_img = np.array(leaf_img).reshape(-1, leaf_size, leaf_size, 3)
     return leaf_img
 
 
 def detect(img_path: str) -> Dict[str, int]:
     output_dir = "leafs"
-    file_list = os.listdir(output_dir)
-    for file_name in file_list:
-        file_path = os.path.join(output_dir, file_name)
-        try:
-            if os.path.isfile(file_path):
-                os.unlink(file_path)
-        except Exception as e:
-            print(f"Can't delete file {file_path}: {e}")
-
+    os.makedirs(output_dir)
     leaf_number = 0
     img = cv2.imread(img_path, cv2.IMREAD_COLOR)
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -72,6 +69,33 @@ def detect(img_path: str) -> Dict[str, int]:
         else:
             oak += 1
 
+    file_list = os.listdir(output_dir)
+    for file_name in file_list:
+        file_path = os.path.join(output_dir, file_name)
+        try:
+            if os.path.isfile(file_path):
+                os.unlink(file_path)
+        except Exception as e:
+            print(f"Can't delete file {file_path}: {e}")
+    os.rmdir(output_dir)
     return {'aspen': aspen, 'birch': birch, 'hazel': hazel, 'maple': maple, 'oak': oak}
 
-print(detect("test_data\\lisc.jpg"))
+@click.command()
+@click.option('-p', '--data_path', help='Path to data directory', type=click.Path(exists=True, file_okay=False, path_type=Path), required=True)
+@click.option('-o', '--output_file_path', help='Path to output file', type=click.Path(dir_okay=False, path_type=Path), required=True)
+
+def main(data_path: Path, output_file_path: Path):
+    img_list = data_path.glob('*.jpg')
+
+    results = {}
+
+    for img_path in tqdm(sorted(img_list)):
+        leaves = detect(str(img_path))
+        results[img_path.name] = leaves
+
+    with open(output_file_path, 'w') as ofp:
+        json.dump(results, ofp)
+
+
+if __name__ == '__main__':
+    main()

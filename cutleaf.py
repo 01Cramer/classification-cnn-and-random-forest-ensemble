@@ -2,9 +2,9 @@ import os
 import cv2
 import matplotlib.pyplot as plt
 
-img_path = "test_data\\0029.jpg"
+img_path = "data\\0039.jpg"
 output_dir = "leafs"
-leaf_number = 280
+leaf_number = 390
 
 def cutleaf(img_path, output_dir, leaf_number):
     img = cv2.imread(img_path, cv2.IMREAD_COLOR)
