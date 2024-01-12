@@ -19,8 +19,9 @@ def prepare(leaf_path):
 
 def detect(img_path: str) -> Dict[str, int]:
     output_dir = "leafs"
-    os.makedirs(output_dir)
+    os.makedirs(output_dir) # Creates a folder where single leaves (from one image) will be stored
     leaf_number = 0
+
     img = cv2.imread(img_path, cv2.IMREAD_COLOR)
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -55,7 +56,7 @@ def detect(img_path: str) -> Dict[str, int]:
         leaf_transformed = prepare(leaf_path)
 
         predictions = model.predict(leaf_transformed)
-        print(predictions)
+        #print(predictions)
         classification = np.argmax(predictions)
 
         if classification == 0:
@@ -69,6 +70,7 @@ def detect(img_path: str) -> Dict[str, int]:
         else:
             oak += 1
 
+    # Clears directory before removing it
     file_list = os.listdir(output_dir)
     for file_name in file_list:
         file_path = os.path.join(output_dir, file_name)
@@ -77,6 +79,7 @@ def detect(img_path: str) -> Dict[str, int]:
                 os.unlink(file_path)
         except Exception as e:
             print(f"Can't delete file {file_path}: {e}")
+
     os.rmdir(output_dir)
     return {'aspen': aspen, 'birch': birch, 'hazel': hazel, 'maple': maple, 'oak': oak}
 

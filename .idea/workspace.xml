@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15841eb0-94b3-4c7c-82c1-2691f57f9ea1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/fingerprint.pb" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/fingerprint.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/keras_metadata.pb" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/keras_metadata.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/saved_model.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/variables/variables.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/variables/variables.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/X.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convnn_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/convnn_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_training_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/create_training_data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cutleaf.py" beforeDir="false" afterPath="$PROJECT_DIR$/cutleaf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/0045.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CNN_leafs-1704330795/train/events.out.tfevents.1704330795.DESKTOP-HIAI3QO.10540.4.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CNN_leafs-1704330795/validation/events.out.tfevents.1704330798.DESKTOP-HIAI3QO.10540.5.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0029.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/y.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/y.pickle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +65,7 @@
       <workItem from="1704908071046" duration="1199000" />
       <workItem from="1704911440700" duration="2081000" />
       <workItem from="1704981434467" duration="7385000" />
+      <workItem from="1705078057795" duration="565000" />
     </task>
     <servers />
   </component>
