@@ -3,40 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="15841eb0-94b3-4c7c-82c1-2691f57f9ea1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/fingerprint.pb" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/fingerprint.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/keras_metadata.pb" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/keras_metadata.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/saved_model.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/variables/variables.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_leafs.model/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_leafs.model/variables/variables.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/X.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convnn_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/convnn_model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_training_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/create_training_data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cutleaf.py" beforeDir="false" afterPath="$PROJECT_DIR$/cutleaf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704990593/train/events.out.tfevents.1704990594.LAPTOP-TDOCU11N.5384.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704990593/validation/events.out.tfevents.1704990598.LAPTOP-TDOCU11N.5384.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704990772/train/events.out.tfevents.1704990773.LAPTOP-TDOCU11N.3452.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704990772/validation/events.out.tfevents.1704990777.LAPTOP-TDOCU11N.3452.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704990916/train/events.out.tfevents.1704990917.LAPTOP-TDOCU11N.20792.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704990916/validation/events.out.tfevents.1704990920.LAPTOP-TDOCU11N.20792.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704991088/train/events.out.tfevents.1704991089.LAPTOP-TDOCU11N.9064.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704991088/validation/events.out.tfevents.1704991093.LAPTOP-TDOCU11N.9064.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704991192/train/events.out.tfevents.1704991193.LAPTOP-TDOCU11N.21764.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1704991192/validation/events.out.tfevents.1704991197.LAPTOP-TDOCU11N.21764.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1705077812/train/events.out.tfevents.1705077813.LAPTOP-TDOCU11N.10196.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/3-conv-64-nodes-1-dense1705077812/validation/events.out.tfevents.1705077817.LAPTOP-TDOCU11N.10196.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_json/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output_json/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/0049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/y.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/y.pickle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +73,7 @@
       <workItem from="1705693566117" duration="311000" />
       <workItem from="1705701206150" duration="19000" />
       <workItem from="1705748865911" duration="1085000" />
-      <workItem from="1705752920608" duration="9020000" />
+      <workItem from="1705752920608" duration="9664000" />
     </task>
     <servers />
   </component>
