@@ -42,7 +42,6 @@ def detect(img_path: str) -> Dict[str, int]:
         leaf_number += 1
 
 #------------------------------------------------- NEURAL NET MODEL ---------------------------------------------------#
-    #model = tf.keras.models.load_model('CNN_leafs.model', compile=False)
     model = tf.keras.models.load_model('feature_extractor_model.h5')
 
     clf = load('RF_model.joblib')
@@ -61,7 +60,7 @@ def detect(img_path: str) -> Dict[str, int]:
         leaf_transformed = prepare(leaf_path)
 
         leaf_transformed = model.predict(leaf_transformed)
-        #print(predictions)
+
         classification = clf.predict(leaf_transformed)
 
         if classification == 0:
