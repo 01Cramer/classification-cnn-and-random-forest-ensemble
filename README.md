@@ -2,3 +2,6 @@
 
 The inspiration for the project idea and dataset came from [PUT Vision Lab](https://github.com/PUTvision/WDPOProject/tree/v2023?fbclid=IwAR0sf5s2HThpwEizT8nSRvGK55OU4nRmtPnd7vs46LFmc6yeXXMa-wp2MCc).
 
+## Workflow
+
+![](https://github.com/01Cramer/classification-cnn-and-random-forest-ensemble/blob/main/image.png)
