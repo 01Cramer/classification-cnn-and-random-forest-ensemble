@@ -1,3 +1,6 @@
+
+#---------------Script used for gathering training data by cutting leaves from given images----------------------------#
+
 import os
 import cv2
 import matplotlib.pyplot as plt
